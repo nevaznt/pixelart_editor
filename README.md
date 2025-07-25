@@ -11,12 +11,12 @@ Use:
   Change the shape tool's shape by clicking on it.
   
 Some shortcut:
-  Pencil: p
-  Eraser: e
-  Color picker: c
-  Bucket fill: f
-  Shape tool: s
-  Outline Shape tool: a
+  Pencil: p; 
+  Eraser: e; 
+  Color picker: c;  
+  Bucket fill: f;  
+  Shape tool: s; 
+  Outline Shape tool: a; 
   Palette slots: 1, 2, 3, 4, 5, 6, 7, 8, 9, 0
 
   <img width="1082" height="1112" alt="Screenshot 2025-07-25 152716" src="https://github.com/user-attachments/assets/0654bed9-3c26-419b-b408-94588c3b3eb6" />
