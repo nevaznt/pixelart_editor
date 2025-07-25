@@ -16,8 +16,8 @@ class Create:
         self.height = TextField(200, 190, 80, 20, self.window_panel)
         self.height.value = '0'
         self.b_confirm = Button(105, 300, 50, 'Create', self.window_panel)
-        self.title_font = pygame.font.Font('C:\\Users\\Chris\\AppData\\Local\\Microsoft\\Windows\\Fonts\\JetBrainsMono-Bold.ttf', 40)
-        self.font = pygame.font.Font('C:\\Users\\Chris\\AppData\\Local\\Microsoft\\Windows\\Fonts\\JetBrainsMono-Bold.ttf', 20)
+        self.title_font = pygame.font.Font('JetBrainsMono-Bold.ttf', 40)
+        self.font = pygame.font.Font('JetBrainsMono-Bold.ttf', 20)
         self.active_textfield = 'width'
 
     def update(self):
@@ -105,7 +105,7 @@ class TextField:
         self.active = False
         self.rect = pygame.Rect(x, y, width, font_size*1.5)
         self.value = ''
-        self.font = pygame.font.Font('C:\\Users\\Chris\\AppData\\Local\\Microsoft\\Windows\\Fonts\\JetBrainsMono-Bold.ttf', font_size)
+        self.font = pygame.font.Font('JetBrainsMono-Bold.ttf', font_size)
         self.key_prev = ''
         self.window_panel = window_panel
 
@@ -151,7 +151,7 @@ class Button:
         self.text = text
         self.pressed = False
         self.hover = False
-        self.font = pygame.font.Font('C:\\Users\\Chris\\AppData\\Local\\Microsoft\\Windows\\Fonts\\JetBrainsMono-Bold.ttf', int(h))
+        self.font = pygame.font.Font('JetBrainsMono-Bold.ttf', int(h))
         self.window_panel = window_panel
         self.mouse_prev = pygame.mouse.get_pressed()
 
