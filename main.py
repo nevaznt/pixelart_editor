@@ -84,7 +84,7 @@ def main():
 
     while True:
         for event in pygame.event.get():
-            if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
+            if event.type == pygame.QUIT:
                 stop_and_quit()
             if event.type == pygame.MOUSEWHEEL:
                 window_panel.mousewheel = event.y
