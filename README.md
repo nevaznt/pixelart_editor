@@ -10,7 +10,7 @@ Use:
   CTRL+T centers the canvas and the tool selection bar to left corner  
   Change the shape tool's shape by clicking on it.  
   
-Some shortcut:
+Some shortcut:  
   Pencil: p    
   Eraser: e    
   Color picker: c    
