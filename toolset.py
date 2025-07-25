@@ -45,10 +45,10 @@ class Tool_set:
 
         if keys[pygame.K_p]: self.selected = 0
         elif keys[pygame.K_e]: self.selected = 1
-        elif keys[pygame.K_f]: self.selected = 2
-        elif keys[pygame.K_c]: self.selected = 3
+        elif keys[pygame.K_c]: self.selected = 2
+        elif keys[pygame.K_f]: self.selected = 3
         elif keys[pygame.K_s]: self.selected = 4
-        elif keys[pygame.K_o]: self.selected = 5
+        elif keys[pygame.K_a]: self.selected = 5
 
         self.move.update()
         self.update_hitboxes()
@@ -229,10 +229,13 @@ class Shape(Tool):
     def nextShape(self):
         for i in range(len(self.shapes)):
             if self.shapes[i] == self.shape:
+                new_icon = 0
                 if i == len(self.shapes)-1:self.shape = self.shapes[0]
-                else: self.shape = self.shapes[i+1]
-                if self.width != 0: self.icon = self.icons[i+3]
-                else: self.icon = self.icons[i]
+                else: 
+                    self.shape = self.shapes[i+1]
+                    new_icon = i+1
+                if self.width != 0: self.icon = self.icons[new_icon+3]
+                else: self.icon = self.icons[new_icon]
                 break 
 
     def update(self):
@@ -240,6 +243,8 @@ class Shape(Tool):
 
         canvas_x, canvas_y = self.window_panel.raster_canvas.get_position_topleft()
         canvas_w, canvas_h = self.window_panel.raster_canvas.get_zoomed_size()
+
+        print(self.shape)
 
         if self.is_in_canvas_space(self.window_panel.mouse_pos, canvas_x, canvas_y, canvas_w, canvas_h) and not self.window_panel.tool_set.active:
             mouse_canvas_x, mouse_canvas_y = self.get_mouse_canvas_coordinates(self.window_panel.mouse_pos, canvas_x, canvas_y)
