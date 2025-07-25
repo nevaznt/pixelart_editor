@@ -198,7 +198,7 @@ class TextField:
         self.active = False
         self.value = ''
         self.rect = pygame.Rect(x, y, width, font_size*1.5)
-        self.font = pygame.font.Font('C:\\Users\\Chris\\AppData\\Local\\Microsoft\\Windows\\Fonts\\JetBrainsMono-Bold.ttf', font_size)
+        self.font = pygame.font.Font('JetBrainsMono-Bold.ttf', font_size)
         self.key_prev = ''
 
     def update_color_value(self):
